@@ -17,11 +17,11 @@ pipeline {
                 sh 'df -h /'
                 }
             }
-            //3rd stage of the pipeline for loged in users
-            stage('Users'){
+            //3rd stage of the pipeline present working directory
+            stage('working directory'){
                 steps{
-                echo 'Logged in User in Jenkins Server'
-                sh 'last'
+                echo 'currect working directory'
+                sh 'pwd'
                 }
             }
         }
