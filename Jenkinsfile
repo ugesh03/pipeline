@@ -20,7 +20,7 @@ pipeline {
             //3rd stage of the pipeline present working directory
             stage('working directory'){
                 steps{
-                echo 'currect working directory'
+                echo 'current working directory'
                 sh 'pwd'
                 }
             }
