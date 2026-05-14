@@ -5,6 +5,9 @@ pipeline {
         stages{
             //staging the pipeline script
             stage('Hello'){
+                 agent {
+        label 'Build-In Node'
+    }
                 steps{
                 echo 'Jenkins from Master server'
                 }
